@@ -12,7 +12,9 @@ The CYD has the following features:
 - 320 x 240 LCD Display (2.8")
 - Touch Screen (Resistive)
 - USB for powering and programming
-- SD Card Slot, LED and some additional pins broken out
+- SD Card Slot
+- LED 
+- additional GPIO pins broken out
 
 ## Who is it good for?
 
