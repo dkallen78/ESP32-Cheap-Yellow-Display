@@ -72,7 +72,7 @@ tft.drawString("Hello", x, y, fontNum); // Left Aligned
 This line draws the text on the screen. It takes four arguments: the text to display, the x and y position of where to start the text, and which font to use. Keep in mind that the coordinate system used by the CYD starts in the top left corner (0, 0) and extends to the bottom right corner (319, 239). Negative numbers are allowed, as are numbers that are "outside" of the display, but those pixels won't be rendered.
 
 ```c++
- x = 320 /2;
+x = 320 /2;
 y += 16;
 ```
 
@@ -95,3 +95,11 @@ tft.setTextDatum(TC_DATUM);
 tft.drawString("World", x, y, fontNum);
 ```
 `TC_DATUM` is a constant in the TFT_eSPI library and is short for **t**op **c**enter which refers how the text should be rendered. If we changed the argument to `TR_DATUM` our text would render to the left of our given x value, making it right aligned. You can see all the possible arguments for `setTextDatum()` [here](https://github.com/Bodmer/TFT_eSPI/blob/5793878d24161c1ed23ccb136f8564f332506d53/TFT_eSPI.h#L281).
+
+```c++
+void loop() {
+  ...
+}
+```
+
+After the code in `setup()` runs, the code in `loop()` runs repeatedly. Since there's nothing here, this is where the program ends.

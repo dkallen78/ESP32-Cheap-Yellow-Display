@@ -44,7 +44,7 @@ void setup() {
   int y = 10;
   int fontNum = 2; 
   tft.drawString("Hello", x, y, fontNum); // Left Aligned
-  x = 320 /2;
+  x = 320 / 2;
   y += 16;
   tft.setTextColor(TFT_BLUE, TFT_BLACK);
   tft.drawCentreString("World", x, y, fontNum);
